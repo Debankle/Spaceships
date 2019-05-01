@@ -1,0 +1,8 @@
+# Ignore IDE files
+.vscode/
+
+# Ignore python files
+build/
+dist/
+
+**/__pycache__/**
