@@ -42,6 +42,8 @@ class Game(object):
         playBtn = Button(w/3*2, 500, 250, 75, text="Play", bgColor=Colors.btnBg1,
                          fgColor=Colors.btnFg1, hoverBg=Colors.btnBg2, hoverFg=Colors.btnFg2)
 
+        time.sleep(0.12)
+
         while running:
 
             for event in pygame.event.get():
@@ -85,6 +87,8 @@ class Game(object):
 
         back = Button(w/2, w/2, 400, 120, text="Back", bgColor=Colors.btnBg1,
                       fgColor=Colors.btnFg1, hoverBg=Colors.btnBg2, hoverFg=Colors.btnFg2, fontSize=60)
+
+        time.sleep(0.12)
 
         while running:
 
@@ -131,6 +135,8 @@ class Game(object):
         animate = False
         animateX = -5.5
         animateMod = 0
+
+        time.sleep(0.12)
 
         while running:
 
@@ -196,6 +202,8 @@ class Game(object):
         godImg = pygame.image.load(os.path.join(
             "assets", "Images", "god.jpg")).convert_alpha()
         godImg = pygame.transform.scale(godImg, (self.width, self.height))
+
+        time.sleep(0.12)
 
         while running:
 
