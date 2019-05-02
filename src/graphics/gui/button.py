@@ -31,8 +31,6 @@ class Button(object):
         self._fontPath = os.path.join("assets", "Fonts", self._fontName)
         self._font = pygame.font.Font(self._fontPath, self._fontSize)
 
-        self._update()
-
     def _update(self):
         self._rect = pygame.Rect(self._x - self._width/2, self._y - self._height/2, self._width, self._height)
         
