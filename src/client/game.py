@@ -16,7 +16,6 @@ def bounceDown(x):
     return y
 
 
-
 class Game(object):
     def __init__(self):
 
@@ -148,7 +147,7 @@ class Game(object):
             if animate:
                 animateX += 0.1
                 animateMod = bounceDown(animateX)
-                
+
                 if animateMod < 0.05 and animateMod > 0:
                     animate = False
 
